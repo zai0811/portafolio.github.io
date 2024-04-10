@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ZAIDA FLEITAS</h1>
+            <h2>Marketing Digital - Técnico TI</h2>
+            <nav>
+                <ul>
+                    <li><a href="#acerca">Acerca de mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#experiencia">Formaciones</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+     
+
+        <script>
+            // Script para agregar la clase 'highlight' a la sección cuando se hace clic en el botón
+            document.addEventListener('DOMContentLoaded', (event) => {
+                document.querySelectorAll('nav a').forEach(link => {
+                    link.addEventListener('click', function (e) {
+                        // Prevent default anchor click behavior
+                        e.preventDefault();
+    
+                        const sectionId = this.getAttribute('href');
+                        document.querySelector('.highlight')?.classList.remove('highlight');
+    
+                        // Add 'highlight' class to the clicked section
+                        document.querySelector(sectionId).classList.add('highlight');
+                        
+                        // Scroll to the section
+                        document.querySelector(sectionId).scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    });
+                });
+            });
+        </script>
+
+    
+        <section id="acerca">
+            <h2>Acerca de mí</h2>
+            <p>Tengo experiencia en marketing de redes sociales, gestión, creación de contenidos(Canva, DALL-E, CapCup), análisis de datos con Meta Business Suite, CRM(kommo). Asistencia técnica en informática, reparación y mantenimiento de hardware y software. Metodologías ágiles, SCRUM y Lean UX. Gestión de proyectos (Jira, Trello, Notion, GitHub). Figma y programación Java, Python, C++, C#, Assembler, diseño de base de datos, testeo de APIs(Postman), matemáticas(Álgebra).</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <!-- Lista de habilidades -->
+            <div class="habilidad">
+                <div>
+                    <img src="img/tecnologia.png" >
+                    <p>Adaptación tecnológica</p>
+                </div>
+                <div>
+                    <img src="img/liderazgo.png" >
+                    <p>Liderazgo</p>
+                </div>
+                <div>
+                    <img src="img/equipo.png" >
+                    <p>Trabajo en equipo</p>
+                </div>
+                <div>
+                    <img src="img/creatividad.png" >
+                    <p>Creatividad</p>
+                </div>
+                <div>
+                    <img src="img/analisis.png" >
+                    <p>Análisis crítico</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="formaciones">
+            <h2>Formaciones</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Área</th>
+                        <th>Institución</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 2024 -->
+                    <tr>
+                        <td>Ing. Informática</td>
+                        <td>Universidad Nacional de Itapua</td>
+                        <td>2024 (En proceso de Tesis)</td>
+                    </tr>
+                    <tr>
+                        <td>Datos personales y empresas</td>
+                        <td>TeDIc</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>Diseño UX</td>
+                        <td>TeDIc</td>
+                        <td>2024</td>
+                    </tr>
+                    <!-- 2023 -->
+                    <tr>
+                        <td>Ciberseguridad de Sistemas</td>
+                        <td>Servicio Nacional de Promoción Nacional - PY</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Gestión de Redes Sociales</td>
+                        <td>Servicio Nacional de Promoción Nacional - PY</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Programación Python</td>
+                        <td>Servicio Nacional de Promoción Nacional - PY</td>
+                        <td>2023</td>
+                    </tr>
+                    <!-- 2020 -->
+                    <tr>
+                        <td>Introducción al desarrollo web</td>
+                        <td>Google Activate</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing Digital</td>
+                        <td>Google Activate</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Comercio Electrónico</td>
+                        <td>Google Activate</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Competencias Digitales</td>
+                        <td>Google Activate</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Transformación Digital para el empleo</td>
+                        <td>Google Activate</td>
+                        <td>2020</td>
+                    </tr>
+                    <!-- 2012 -->
+                    <tr>
+                        <td>Técnico en Informática</td>
+                        <td>C.R.E.E. Itapúa</td>
+                        <td>2012</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Habilidades y Conocimientos</th>
+                        <th>Herramientas/Plataformas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Metodologías ágiles</td>
+                        <td>Scrum, Lean UX</td>
+                    </tr>
+                    <tr>
+                        <td>Gestión de proyectos</td>
+                        <td>Jira, Trello, Notion, GitHub</td>
+                    </tr>
+                    <tr>
+                        <td>Gestión de Contenidos</td>
+                        <td>WordPress, Meta Business</td>
+                    </tr>
+                    <tr>
+                        <td>Planificación y programación de proyectos</td>
+                        <td>HTML, CSS, JavaScript, Python, Java</td>
+                    </tr>
+                    <tr>
+                        <td>Gestión y Monitoreo de Datos</td>
+                        <td>Facebook, Instagram (KPIs)</td>
+                    </tr>
+                    <tr>
+                        <td>Diseño de contenidos</td>
+                        <td>Canva, CapCut, DALL-E</td>
+                    </tr>
+                    <tr>
+                        <td>Mantenimiento y Reparación de Computadoras</td>
+                        <td>Notebooks y PCs</td>
+                    </tr>
+                    <tr>
+                        <td>Herramientas ofimáticas</td>
+                        <td>Offline y online</td>
+                    </tr>
+                    <tr>
+                        <td>Reportes Técnicos</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Testeo de APIs</td>
+                        <td>Postman</td>
+                    </tr>
+                    <tr>
+                        <td>Matemáticas</td>
+                        <td>Álgebra</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="proyectos" >
+            <h2>Proyectos</h2>
+            <div>
+                    
+                    <a href="https://www.instagram.com/centro.nuevoamanecer.enc/" target="_blank" class="proyecto">
+                        <img src="img/nuevo-amanecer.png" alt="Proyecto Nuevo Amanecer" class="img-thumbnail">
+                        <span class="texto-hover">Ver Portafolio</span>
+                    </a>
+                    <a href="https://www.instagram.com/nodo.informatica/" target="_blank" class="proyecto">
+                        <img src="img/nodo.png" alt="Proyecto Nodo" class="img-thumbnail">
+                        <span class="texto-hover">Ver Portafolio</span>
+                    </a>
+                    <a href="https://www.instagram.com/fullremate.enc/" target="_blank" class="proyecto">
+                        <img src="img/remate.png" alt="Proyecto Remate" class="img-thumbnail">
+                        <span class="texto-hover">Ver Portafolio</span>
+                    </a>
+            </div>
+        </section>
+
+        <section id="contacto" >
+                 <h2>Contacto</h2>
+                <div class="iconos-contenedor">
+                    <a href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCJftvWVPNSlnKVRgkfPnGJnVmncqtsCLlqfWnFgQpxDZpRdzpnnlCnrvtwmfVgfsHgwnZCg" target="_blank" class="proyecto">
+                        <img src="img/correo.png"  class="img-thumbnail">
+                    </a>
+                    <a href="https://wa.me/595985234118" target="_blank" class="proyecto">
+                        <img src="img/whatsapp.png"  class="img-thumbnail">
+                    </a>
+                    <a href="https://www.instagram.com/zaifleitas/" target="_blank" class="proyecto">
+                        <img src="img/instagram.png"  class="img-thumbnail">
+                    </a>
+                    <a href="https://www.linkedin.com/in/zaifleitas/" target="_blank" class="proyecto">
+                        <img src="img/linkendin.png"  class="img-thumbnail">
+                    </a>
+                </div>
+        
+        </section>
+        <footer>
+            <p> Copyright &copy; 2024</p>
+        </footer>
+    </div>
+
+</body>
+</html>

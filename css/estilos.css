@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header, section {
+    background-color: #fffbfb;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+header {
+    background-color: #222;
+    color: #dad5d5;
+    margin-bottom: 10px;
+    overflow: hidden; /* Asegura que el contenido flotante sea contenido */
+
+}
+header h1 {
+    text-align: center;
+    padding: 20px 0;
+    color: #f1efef;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Distribuye el espacio horizontalmente */
+    background-color: #333;
+}
+nav ul li {
+    flex: 1; /* Distribuye el espacio equitativamente */
+
+}
+header h2{
+    text-align: center;
+    color: #f1efef;
+}
+nav a {
+    display: block; /* Hace que el enlace llene el elemento li */
+    text-align: center; /* Centra el texto dentro del enlace */
+    padding: 15px 0; /* Añade espacio arriba y abajo */
+    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    background-color: #444; /* Color de fondo para cada enlace */
+    border-right: 1px solid #fff; /* Borde entre los enlaces */
+    transition: background-color 0.3s; /* Suaviza el cambio de color */
+}
+h1, h2 {
+    color: #333;
+}
+#acerca p {
+    text-align: justify;
+    color: #383838;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.habilidad {
+    display: flex; /* Establece un contenedor flex */
+    justify-content: space-around; /* Espacia los elementos uniformemente */
+    text-align: center; /* Centra el texto */
+}
+
+.habilidad div{
+    width: 200px; /* Ancho fijo para cada habilidad */
+    height: 150px; /* Altura fija para cada habilidad */
+    margin: 20px; /* Espacio alrededor de cada habilidad */
+    align-items: center; /* Alinea verticalmente los elementos de la habilidad */
+    display: flex; /* Utiliza flexbox para permitir alineación vertical */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    border: 1px solid #ddd; /* Un borde sólido, suave */
+    padding: 10px; /* Espacio dentro del borde */
+    margin-bottom: 10px; /* Espacio entre cada habilidad */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: sombra suave para profundidad */
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+
+
+.habilidad img {
+    width: 50px; /* Tamaño fijo para hacer las imágenes pequeñas */
+    height: 50px; /* Altura para mantener la relación de aspecto */
+    margin-bottom: 8px; /* Espacio entre la imagen y el texto */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+}
+
+.habilidad span {
+    display: block;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+nav a:last-child {
+    border-right: none; /* Elimina el borde del último enlace */
+}
+nav a:hover, nav a:focus {
+    background-color: #555; /* Cambia el color al pasar el mouse o enfocar */
+}
+
+section:hover {
+    background-color: #f0ecec; /* Cambia el color de fondo al hacer hover */
+}
+  /* Estilo para resaltar secciones */
+  .highlight {
+    background-color: #fcfcfc; /* color de fondo al hacer clic */
+    border-color: blue; /* color del borde al hacer clic */
+}
+#formaciones {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+} 
+footer {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto en blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 20px 0; /* Espacio arriba y abajo del texto */
+    width: 100%; /* El pie de página ocupa el ancho completo */
+}
+
+#proyectos div {
+    display: flex; /* Mantiene los elementos en una fila */
+    justify-content: space-between; /* Espacia los elementos uniformemente en la línea */
+    align-items: center; /* Alinea verticalmente */
+}
+
+#proyectos a.proyecto {
+    position: relative; /* Establece el contenedor de referencia para el texto absoluto */
+    display: inline-block; /* Permite al contenedor ajustar su tamaño al contenido */
+    width: 33%;
+    text-decoration: none; /* Elimina cualquier subrayado de los enlaces */
+}
+
+#proyectos img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+}
+
+#proyectos .texto-hover {
+    position: absolute; /* Posiciona el texto sobre la imagen */
+    bottom: 0; /* Alinea el texto en la parte inferior de la imagen */
+    left: 0; /* Alinea el texto a la izquierda de la imagen */
+    width: 100%; /* Asegura que el texto ocupe toda la anchura de la imagen */
+    background-color: rgba(0,0,0,0.7); /* Fondo semitransparente para mejorar la legibilidad */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 10px 0; /* Añade algo de espacio alrededor del texto */
+    opacity: 0; /* Oculta el texto inicialmente */
+    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+}
+
+#proyectos a.proyecto:hover .texto-hover {
+    opacity: 1; /* Muestra el texto al pasar el mouse sobre el contenedor */
+}
+#contacto {
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+    text-align: center; /* Asegura que el texto dentro de los elementos flex esté centrado */
+    gap: 20px; /* Añade espacio entre el h2 y el contenedor de íconos */
+}
+
+
+#contacto h2 {
+    margin: 0; /* Elimina márgenes predeterminados para asegurar la alineación */
+    flex-grow: 1; /* Opcional: Permite que el h2 crezca para llenar el espacio, si es necesario */
+}
+
+#contacto .proyecto {
+    margin: 0 10px; /* Reduce el espacio entre los íconos */
+    text-align: center; /* Centra el contenido de los enlaces */
+}
+.iconos-contenedor {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente en el contenedor flex */
+    gap: 10px; /* Añade espacio entre los íconos */
+}
+#contacto .proyecto img {
+    width: 40px; /* Ajusta el tamaño de los íconos */
+    height: 40px; /* Mantiene la proporción de los íconos */
+    border-radius: 5px; /* Borde redondeado para los íconos */
+}
+
